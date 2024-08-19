@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title>Environment Club</title>
+        <link rel="stylesheet" href="website_theme.css" type="text/css">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body> 
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Logo.png"></a>
+                <div class="nav-links">
+                    <ul onmouseleave="hidewhatwedo(); hideevents();">
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="aboutus.html">About Us</a> </li>
+                        <li><a class="dropdown_button" onmouseover="setTimeout(showwhatwedo, 300); hideevents();">What we do <span style="font-size: 8pt;">&#9660;</span></a>
+                            <script>
+                                function showwhatwedo(){
+                                    var dropdown = document.getElementById("whatwedo");
+                                    dropdown.style.display = "block";
+                                }
+
+                                function hidewhatwedo(){
+                                    var dropdown = document.getElementById("whatwedo");
+                                    dropdown.style.display = "none";
+                                }
+
+                            </script>
+                        <div class="dropdown_content" id="whatwedo" onmouseleave="hidewhatwedo();">
+                            <a href="recycling.html">Recycling</a>
+                            <a href="gardening.html">Gardening</a>
+                            <a href="volunteering.html">Volunteering</a>
+                        </div>   </li>
+                        <li><a class="dropdown_button" onmouseover="setTimeout(showevents, 300); hidewhatwedo();">Events <span style="font-size: 8pt;">&#9660;</span></a> 
+                            <script>
+                                function showevents(){
+                                    var dropdown = document.getElementById("events");
+                                    dropdown.style.display = "block";
+                                }
+
+                                function hideevents(){
+                                    var dropdown = document.getElementById("events");
+                                    dropdown.style.display = "none";
+                                }
+                            </script>
+                        <div class="dropdown_content" id="events" onmouseleave="hideevents();">
+                            <a href="chowderbay.html">Chowder Bay</a>
+                            <a href="schoolconference.html">School conference</a>
+                            <a href="tarongazoo.html">Taronga Zoo</a>
+                        </div></li>
+                        <a href="contactus.html" class="button">Contact Us</a>
+                    </ul>
+        
+                </div>
+            </nav>
+        </section>
+
+        <section class="showcase">
+            <video class= homepage_video src="Environment .mp4" muted loop autoplay></video>
+            <div class="overlay"></div>
+
+            <div class="title_text">
+              <h2>Mosman High School</h2>
+              <br>
+              <h3>Environment Club</h3>
+              <br>
+              <br>
+              <br>
+              <a href="aboutus.html" class="button_showcase">About Us</a>
+            
+            </div>
+        </section>
+
+        <section class="body">
+        <div class="aboutus">
+            <div class="image">
+                <img src="aboutusimage.jpg" width="90%"/>
+            </div>
+
+            <div class="content">
+                <h2>About us</h2>
+                <br>
+                <br>
+                <p>
+                    The Mosman High School Environment Club meets every Tuesday during lunchtime, dedicated to fostering a greener future and addressing environmental concerns within the school community. We do activities such as volunteering, gardening and participation in school conferences and events. By nurturing a culture of sustainability and initiative, the Environment Club strives to create a more eco-conscious school environment where students are empowered to take meaningful action towards a healthier planet. 
+
+                    </p>
+                    <br>
+                <br>
+                <br>
+                <a href="aboutus.html" class="button_aboutus">Discover More</a>
+            </div>
+        </div>
+
+        <div class="whatwedo_section">
+            <h2>What we do</h2>
+
+            <div class="recycling">
+                <img src="recyclingwhatwedo.png"/>
+                <h3>Recycling</h3>
+                <p>
+                    The Mosman High School Environment Club actively participates in recycling programs, including the 7/11 coffee cup initiative, as well as collecting and recycling pens, printer cartridges, and batteries. Through these efforts, we contribute to a more sustainable school environment and promote responsible waste management practices.</p>
+                <a href="recycling.html" class="button_recycling">Read more -></a>
+             </div>
+
+             <div class="gardening">
+                <img src="gardeningwhatwedo.jpg"/>
+                <h3>Gardening</h3>
+                <p>
+                    Every Friday afternoon, Environment Club members meet at Memory Park Garden to plant native species and engage in communal gardening. This hands-on activity not only fosters a sense of environmental responsibility but also enriches our community by enhancing green spaces and promoting biodiversity conservation. <p>
+                <a href="gardening.html" class="button_gardening">Read more -></a>
+             </div>
+
+             <div class="volunteering">
+                <img src="volunteeringwhatwedo.jpg"/>
+                <h3>Volunteering</h3>
+                <p>
+                    
+                The Mosman High School Environment Club engages in diverse volunteering actions such as Clean Up Australia and Wildlife Watch NSC. These activities foster community connections and instil a sense of collective responsibility, empowering members to work towards the greater good and contribute positively to their surroundings. 
+                 </p>
+                <a href="volunteering.html" class="button_volunteering">Read more -></a>
+             </div>
+            
+        </div>
+
+        <div class="statistics_section">
+
+            <div class="cups">
+                <h2>&nbsp;300</h2>
+                <h3>Cups Recycled</h3>
+            </div>
+
+            <div class="events">
+                <h2>&nbsp;&nbsp;25</h2>
+                <h3>Events Hosted</h3>
+            </div>
+
+            <div class="members">
+                <h2>50</h2>
+                <h3>Members</h3>
+            </div>
+        </div>
+
+        <div class="events_section">
+            <h2>Events</h2>
+
+            <div class="chowderbay">
+                <img src="chowderbayevents.jpg"/>
+                <h3>Chowder Bay</h3>
+                <p>
+                    
+                 The Environment Club journeyed to Chowder Bay for an enlightening event focused on sustainability. Amidst discussions and tours, they explored seahorse protection and breeding facilities, deepening their understanding of marine conservation and their commitment to safeguarding our oceans for future generations.</p>
+                <a href="chowderbay.html" class="button_chowderbay">Read more -></a>
+             </div>
+
+             <div class="schoolconference">
+                <img src="schoolconferenceevents.jpg"/>
+                <h3>School Conference</h3>
+                <p>
+                    
+                    In August, the Environment Club will host a school conference, inviting students from neighboring schools to witness our eco-initiatives at Mosman High School. Showcasing our environmental endeavors, we aim to inspire collaboration and forge alliances with other schools, united in our mission to effect meaningful change together.</p>
+                <a href="schoolconference.html" class="button_schoolconference">Read more -></a>
+             </div>
+
+             <div class="tarongazoo">
+                <img src="tarongazooevents.jpg"/>
+                <h3>Taronga Zoo</h3>
+                <p>
+                    
+                  In 2022, the Environment Club engaged in a Trash Hack competition at Taronga Zoo's Green Schools event. Amidst a showcase of diverse environmental initiatives from various schools, we connected with community leaders, fostering collaboration and knowledge exchange. It was an invaluable opportunity to unite, learn, and amplify our impact.</p>
+                <a href="tarongazoo.html" class="button_tarongazoo">Read more -></a>
+             </div>
+            
+        </div>
+
+        <div class="join">
+            <div class="text">
+                <h2>Join Us Today</h2>
+                <h3>Contact us or come to our next meeting on Tuesday !</h3>
+                <a href="contactus.html" class="button_join">Contact Us</a>
+            </div>
+
+        <div class="join_image">
+            <img src="joinusfooter.jpg"/>
+        </div>
+        </div>
+
+        </section>
+    <section class="footer">
+        <div class="footer">
+            <div class="environment_club">
+                &nbsp;&nbsp;<img src="Logo.png" class="footerlogo"/>
+                <h3>Environment &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Club</h3>
+                <p>The Mosman High School Environment Club is a group that runs on Tuesday lunchtimes. We work towards a more environmental future. </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="button_footer_logo">About Us</a>
+            </div>
+        <div class="Whatwedo_footer">
+            <h3>What we do</h3>
+            <a href="recycling.html" class="whatwedo_footer_links" class="button_whatwedo_cup">Recycling</a>
+            <br><br>
+            <a href="gardening.html" class="whatwedo_footer_links" class="button_whatwedo_recycling">Gardening</a>
+            <br><br>
+            <a href="volunteering.html" class="whatwedo_footer_links" class="button_whatwedo_volunteering">Volunteering</a>
+        </div>
+
+        <div class="events_footer">
+            <h3>Events</h3>
+            <a href="chowderbay.html" class="events_footer_links" class="button_events_chowderbay">Chowder Bay</a>
+            <br><br>
+            <a href="schoolconference.html" class="events_footer_links" class="button_whatwedo_schoolconference">School Conference</a>
+            <br><br>
+            <a href="tarongazoo.html" class="events_footer_links" class="button_whatwedo_tarongazoo">Taronga Zoo</a>
+        </div>
+
+        <div class="contact_footer">
+            <h3>Contact</h3>
+            <p>769 Military Road, <br>Mosman NSW 2088</p>
+            <br>
+            <p>mosmanh.school@det.nsw.edu.au</p>
+            <br>
+            <p>02 9968 1006</p>
+            <br>
+            <br><br><br><br><br>
+
+            <p class=" madeby">Website made by Hannah Ishimura Wright</p>
+
+        
+            
+        </div>
+        </div>
+    </section>
+    </body>
+</html>
