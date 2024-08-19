@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    min-height: 60vh;
+    width: 100%;
+    color: white;
+}
+
+nav{
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 110px;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #12813a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+.button{
+    color: white;
+    background-color:#12813a;
+    text-decoration: none;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    color: white;
+    background-color: #0e622c;
+}
+
+.dropdown_content {
+    position: absolute;
+    background-color: white; 
+    z-index: 10;
+    display: none;
+    text-align: center;
+    box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.3);
+}
+
+.dropdown_content a {
+    color: #000000;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content a:hover {
+    background-color: #12813a; 
+    color: white;
+}
+
+.dropdown_button:hover .dropdown_content {
+    display: block;
+}
+
+
+.homepage_image{
+    position: absolute;
+    left: 0;
+    top: 16%;
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+
+}
+
+
+.title_text{
+    position: absolute;
+    padding: 100px;
+    align-items: center;
+    right:0;
+    width: 100%;
+   
+    top: 18%;
+    text-align: center
+}
+
+.title_text h2 {
+    font-size: 5em;
+    font-weight: 700;
+    color: white;
+}
+
+
+.aboutusimage{
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+    float: left;
+    height: 70%;
+    padding-bottom: 20px;
+}
+
+.text{
+    width: 49%;
+    padding: 1%;
+    float: left;
+    text-align: justify;
+}
+
+.text h2{
+    font-size: 40px;
+    font-weight: 800;
+    color: #12813a;
+    padding-bottom: 20px;
+}
+
+.text p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.environment_club{
+    float: left;
+    width: 20%;
+    padding-left: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.environment_club h3{
+    color:#0e622c;
+    font-weight: 600;
+    font-size: 30px;
+    width: 33px;
+}
+
+.environment_club p{
+    width: 180px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.button_footer_logo{
+    color: white;
+    font-size: 20px;
+    background-color:#12813a;
+    text-decoration: none;
+    padding: 6px 20px 6px 20px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.button_footer_logo:hover{
+    color: white;
+    background-color: #0e622c;
+}
+.footerlogo{
+    width: 150px;
+}
+
+.Whatwedo_footer{
+    padding-top: 30px;
+    float: left;
+    width: 25%;
+    padding-left: 50px;
+}
+
+.Whatwedo_footer h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:#0e622c;
+    padding-bottom: 20px;
+}
+
+.whatwedo_footer_links {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.events_footer{
+    padding-top: 30px;
+    float: left;
+    width: 25%;
+    padding-left: 70px;
+}
+
+.events_footer h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:#0e622c;
+    padding-bottom: 20px;
+}
+.events_footer_links {
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.contact_footer{
+    float: left;
+    width: 25%;
+    padding-left: 80px;
+    padding-top: 30px;
+}
+
+.contact_footer h3{
+    font-size: 30px;
+    font-weight: 600;
+    color:#0e622c;
+    padding-bottom: 20px;
+}
+
+.contact_footer p{
+    font-size: 20px;
+}
+
+.footer{
+    background-color: #f2f1ea;
+    height: 420px;
+    float: left;
+    clear: both;
+    width: 100%;
+}
+
+
+.madeby{
+    font-size: 25px;
+    font-weight: 600;
+    color:#0e622c;
+}
