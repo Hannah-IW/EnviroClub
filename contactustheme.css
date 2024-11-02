@@ -6,14 +6,17 @@
 }
 
 .header{
-    min-height: 60vh;
     width: 100%;
     color: white;
 }
 
+.logoimage{
+    margin: 15%;
+ }
+
 nav{
     display: flex;
-    padding: 2%;
+    padding-right: 1%;
     justify-content: space-between;
     align-items: center;
 }
@@ -100,36 +103,54 @@ nav img{
 
 .homepage_image{
     position: absolute;
+    top: 0;
     left: 0;
-    top: 16%;
     width: 100%;
-    height: 40%;
+    height: auto;
+    max-height: 100vh; 
     object-fit: cover;
+    z-index: -1;
+}
 
+.showcase{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 
 .title_text{
-    position: absolute;
-    padding: 100px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    right:0;
-    width: 100%;
-   
-    top: 18%;
-    text-align: center
+    text-align: center;
+    color: white;
+    z-index: 1;
 }
 
 .title_text h2 {
-    font-size: 5em;
+    font-size: 500%;
     font-weight: 700;
+    padding-bottom: 2%;
     color: white;
+    padding-top: 30%;
+    padding-bottom: 30%;
+}
+
+.information{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .location{
     width: 33%;
     float: left;
-    padding-left: 120px;
+    text-align: center;
 }
 
 .location h2{
@@ -143,13 +164,13 @@ nav img{
 }
 
 .locationimage{
-    height: 25%;
+    height: 60%;
 }
 
 .email{
     width: 33%;
     float: left;
-    padding-left: 120px;
+    text-align: center;
 }
 
 .email h2{
@@ -163,14 +184,19 @@ nav img{
     font-size: 23px;
 }
 
+.emailimage{
+    height: 50%;
+    margin-bottom: 5%;
+}
+
 .phone{
     width: 33%;
     float: left;
-    padding-left: 140px;
+    text-align: center;
 }
 
 .phoneimage{
-    height: 25%;
+    height: 60%;
 }
 
 .phone h2{
