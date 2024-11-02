@@ -12,10 +12,21 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
 
+    <script>
+        function updateShowcaseHeight() {
+            const video = document.querySelector('.homepage_video');
+            const showcase = document.querySelector('.showcase');
+            showcase.style.height = `${video.clientHeight}px`;
+        }
+        
+        window.addEventListener('load', updateShowcaseHeight);
+        window.addEventListener('resize', updateShowcaseHeight);
+    </script>
+
     <body> 
         <section class="header">
             <nav>
-                <a href="index.html"><img src="Logo.png"></a>
+                <a href="index.html"><img src="Logo.png" class = "logoimage"></a>
                 <div class="nav-links">
                     <ul onmouseleave="hidewhatwedo(); hideevents();">
                         <li><a href="index.html">Home</a> </li>
@@ -55,7 +66,7 @@
                             <a href="schoolconference.html">School conference</a>
                             <a href="tarongazoo.html">Taronga Zoo</a>
                         </div></li>
-                        <a href="contactus.html" class="button">Contact Us</a>
+                        <div style="float: right; margin-top: 5px;"><a href="contactus.html" class="button">Contact Us</a></div>      
                     </ul>
         
                 </div>
@@ -68,7 +79,7 @@
 
             <div class="title_text">
               <h2>Mosman High School</h2>
-              <br>
+            
               <h3>Environment Club</h3>
               <br>
               <br>
@@ -81,20 +92,17 @@
         <section class="body">
         <div class="aboutus">
             <div class="image">
-                <img src="aboutusimage.jpg" width="90%"/>
+                <img src="aboutusimage.jpg"/>
             </div>
 
             <div class="content">
                 <h2>About us</h2>
-                <br>
-                <br>
+                
                 <p>
                     The Mosman High School Environment Club meets every Tuesday during lunchtime, dedicated to fostering a greener future and addressing environmental concerns within the school community. We do activities such as volunteering, gardening and participation in school conferences and events. By nurturing a culture of sustainability and initiative, the Environment Club strives to create a more eco-conscious school environment where students are empowered to take meaningful action towards a healthier planet. 
 
                     </p>
-                    <br>
-                <br>
-                <br>
+                   
                 <a href="aboutus.html" class="button_aboutus">Discover More</a>
             </div>
         </div>
@@ -133,17 +141,17 @@
         <div class="statistics_section">
 
             <div class="cups">
-                <h2>&nbsp;300</h2>
+                <h2>300</h2>
                 <h3>Cups Recycled</h3>
             </div>
 
             <div class="events">
-                <h2>4</h2>
+                <h2>25</h2>
                 <h3>Events Hosted</h3>
             </div>
 
             <div class="members">
-                <h2>20</h2>
+                <h2>50</h2>
                 <h3>Members</h3>
             </div>
         </div>
