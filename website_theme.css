@@ -40,7 +40,7 @@ nav img{
 .nav-links ul li a{
     color: black;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 100%;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -73,6 +73,66 @@ nav img{
 .button:hover{
     color: white;
     background-color: #0e622c;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    nav{
+        display: flex;
+        padding-right: 1%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav img{
+        width: 110px;
+    }
+    
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    
+    .nav-links ul li a{
+        color: black;
+        text-decoration: none;
+        font-size: 150%;
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .nav-links ul li::after{
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: #12813a;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    
+    
+    .button{
+        color: white;
+        background-color:#12813a;
+        text-decoration: none;
+        padding: 6px 20px 6px 20px;
+        border-radius: 20px;
+        transition: 0.5s;
+        font-size: 150%;
+    }
 }
 
 .title_text{
@@ -296,7 +356,7 @@ nav img{
         margin-bottom: 10px; 
     }
 
-    .button_recycling, .button_gardening, .button_volunteering {
+    .button_recycling,  .button_volunteering {
         font-size: 110%; 
         margin-top: 10px; 
         margin-bottom: 10px; 
